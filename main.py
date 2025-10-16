@@ -33,6 +33,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"], 
 )
+@app.get("/")
+def root():
+    return {"message": "Server is live. Use POST /predict for predictions."}
+
 
 @app.post("/predict")
 async def predict_dowry(request: DowryRequest):
