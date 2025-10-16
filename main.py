@@ -11,7 +11,12 @@ from pydantic import BaseModel
 #     "mohor": [10000, 20000, 50000, 100000, 300000, 500000, 1000000, 15000, 75000, 150000, 400000],
 #     "dowry": [50000, 100000, 250000, 500000, 1000000, 1500000, 2000000, 75000, 300000, 750000, 1200000]
 # }
-MOCK_DATA=pd.read_excel(r"C:\Users\Shrikrishna R Prabhu\OneDrive\Desktop\Project\data0.xlsx")
+# MOCK_DATA=pd.read_excel(r"C:\Users\Shrikrishna R Prabhu\OneDrive\Desktop\Project\data0.xlsx")
+import os
+import pandas as pd
+
+file_path = os.path.join(os.path.dirname(__file__), "data0.xlsx")
+MOCK_DATA = pd.read_excel(file_path)
 
 class DowryRequest(BaseModel):
     age: str
