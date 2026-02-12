@@ -2,7 +2,19 @@
 
 Small demo that estimates annual CTC for Indian tech roles using a tiny ML model.<br>
 Live on : https://paylensai.netlify.app<br>
-⚠️IMP NOTE: Backend deployed on Render (free tier), server shuts if inactive...
+⚠️IMP NOTE: Backend deployed on Render (free tier), may sleep causing cold starts...
+
+# About
+PayLensAI is a lightweight demo that estimates annual CTC (salary in LPA) for Indian tech roles using a small, transparent machine learning model trained on a curated 2026 dataset.
+
+Key points:
+- Inputs: Experience, Role, Location, Education, Companytype — output: estimated salary.
+- Model: simple, interpretable regression with straightforward preprocessing so results are easy to inspect and reproduce.
+
+Limitations:
+- Trained on a limited dataset; may reflect sampling bias and market changes.
+- Predictions are approximate.
+
 
 # 🚀 Quick start
 1. Install dependencies:
