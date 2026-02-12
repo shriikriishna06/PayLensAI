@@ -2,7 +2,7 @@
 
 Small demo that estimates annual CTC for Indian tech roles using a tiny ML model.<br>
 Live on : https://paylensai.netlify.app<br>
-⚠️IMP NOTE: Backend deployed on Render (free tier), server shuts during inactivity...
+⚠️IMP NOTE: Backend deployed on Render (free tier), server shuts if inactive...
 
 # 🚀 Quick start
 1. Install dependencies:
