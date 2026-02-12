@@ -2,6 +2,7 @@
 
 Small demo that estimates annual CTC for Indian tech roles using a tiny ML model.<br>
 Live on : https://paylensai.netlify.app<br>
+⚠️IMP NOTE: Backend deployed on Render (free tier), server shuts during inactivity...
 
 # 🚀 Quick start
 1. Install dependencies:
@@ -10,7 +11,7 @@ pip install -r requirements.txt
 ```
 2. Run backend:
 ```bash
-uvicorn app:app --reload
+python -m uvicorn app:app --reload
 ```
 3. Open `index.html` in your browser and run a prediction.
 
