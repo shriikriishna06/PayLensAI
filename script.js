@@ -27,7 +27,7 @@ document.getElementById('salaryForm').addEventListener('submit', async function 
     submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/predict', {
+        const response = await fetch('https://salary-predictor-gr9o.onrender.com/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
