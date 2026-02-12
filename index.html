@@ -384,8 +384,6 @@
             </div>
             <div id="resultOverlay"
                 class="hidden absolute inset-0 bg-gray-900/95 backdrop-blur-xl flex flex-col items-center justify-center text-center p-6 z-20 transition-all duration-500 rounded-2xl">
-
-                <!-- Added the 'animate-glow-pulse' class here -->
                 <div
                     class="animate-glow-pulse w-full max-w-sm border border-cyan-500/30 bg-cyan-900/10 rounded-xl p-8 relative overflow-hidden">
 
@@ -482,7 +480,6 @@
             }, 300);
         }
 
-        // --- UI Validation Guard ---
         document.getElementById('salaryForm').addEventListener('submit', function (e) {
             const experienceInput = document.getElementById('experience');
             const roleSelect = document.getElementById('role');
@@ -497,7 +494,6 @@
             if (!locationSelect.value) errors.push("Location");
             if (!companyTypeSelect.value) errors.push("Company Type");
 
-            // If there are errors, stop the form from submitting and stop script.js from taking over
             if (errors.length > 0) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
